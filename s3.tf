@@ -10,13 +10,13 @@ resource "aws_s3_bucket" "data" {
 #bucket = aws_s3_bucket.data.id
 #acl    = "private"
 #}
-resource "aws_s3_bucket_versioning" "data" {
-  bucket = aws_s3_bucket.data.id
+#resource "aws_s3_bucket_versioning" "data" {
+#  bucket = aws_s3_bucket.data.id
 
-  versioning_configuration {
-    status = "Enabled"
-  }
-}
+#  versioning_configuration {
+#    status = "Enabled"
+#  }
+#}
 
 resource "aws_s3_bucket_lifecycle_configuration" "data" {
   bucket = aws_s3_bucket.data.id
